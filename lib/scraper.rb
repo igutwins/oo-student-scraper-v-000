@@ -12,7 +12,7 @@ class Scraper
         student_name = feature.css("h4.student-name").text
         student_location = feature.css("p.student-location").text
         student_url = feature.css("a").uri
-        students << :name => student_name, :location => student_location, :profile_url => student_url
+        students << {name: student_name, location: student_location, profile_url: student_url}
       end
     end
   end
