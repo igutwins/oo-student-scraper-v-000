@@ -33,7 +33,7 @@ class Scraper
         student[:blog] = link
       end
     end
-    student[:profile_quote] = index.css('.profile_quote').text if index.css('.profile_quote')
+    student[:profile_quote] = index.css('.profile-quote').text if index.css('.profile-quote')
     student[:bio] = index.css('div.bio_content.content-holder div.description_holder p').text if index.css('div.bio_content.content-holder div.description_holder p')
 
     student
