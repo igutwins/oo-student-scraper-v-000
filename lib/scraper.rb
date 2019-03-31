@@ -20,4 +20,4 @@ end
 
 end
 
-Scraper.new 
+Scraper.new.scrape_index_page
