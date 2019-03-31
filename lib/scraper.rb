@@ -6,6 +6,7 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     index = Nokogiri::HTML(File.read(index_url))
+    binding.pry
 
     students = {}
 
