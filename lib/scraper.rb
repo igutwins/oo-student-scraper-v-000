@@ -11,7 +11,7 @@ class Scraper
       student.css("div.student-card a").each do |feature|
         student_name = feature.css("h4.student-name").text
         student_location = feature.css("p.student-location").text
-        student_url = feature.css("a").uri
+        student_url = "#{feature.attr('href')}"
         students << {name: student_name, location: student_location, profile_url: student_url}
       end
     end
