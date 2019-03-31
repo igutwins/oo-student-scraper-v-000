@@ -32,16 +32,7 @@ class Scraper
       else
         student[:blog] = link
       end
-
-    each do |social|
-      twitter =
-      linkedin =
-      github =
-      blog =
-    end
-    index.css(".vitals-text-container").each do |vitals|
-      profile_quote = vitals.css(".profile_quote").text
-      bio =
+    end 
 
 
     profile << {}
