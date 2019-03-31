@@ -9,7 +9,7 @@ class Scraper
 
     students = {}
 
-    index.css
+    index.css("div.roster-cards-container").each do |student| 
 
   end
 
